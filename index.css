@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 98vh;
+    width: 98vw;
+    display: flex;
+    gap: 4%;
+}
+
+/* 
+    !! sidebar css
+*/
+
+.sidebar{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottombar{
+    display: none;
+}
+
+.sidebar-top{
+    height: 20%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sidebar-top img{
+    height: 30%;
+    width: 70%;
+}
+.sidebar-top svg{
+    height: 25%;
+    width: 80%;
+    padding: 10%;
+    border-radius: 10px;
+}
+.sidebar-top svg:hover{
+    background-color: rgb(56, 56, 227);
+    fill: white;
+}
+
+.sidebar-middle{
+    height: 50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-15%);
+    border-radius: 5px;
+}
+
+.sidebar-middle svg{
+    height: 12%;
+    width: 80%;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.sidebar-middle svg:hover{
+    background-color: rgb(56, 56, 227);
+    fill: white;
+}
+
+.sidebar-bottom{
+    height: 20%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sidebar-bottom svg{
+    height: 30%;
+    width: 80%;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.sidebar-bottom svg:hover{
+    background-color: rgb(56, 56, 227);
+    fill: white;
+}
+
+/* 
+    !! first css
+*/
+
+.first-section{
+    height: 100%;
+    width:25%;
+}
+
+.profile{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+.profile img{
+    height: 55%;
+    width: auto;
+    border-radius: 50%;
+}
+.profile span{
+    font-family: 'Montserrat', sans-serif;
+}
+.profile h3{
+    margin:0;
+}
+
+.account-balance{
+    height: 40%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.account-balance h2{
+    margin-top: 0;
+    margin-bottom: 6%;
+    font-size: 1.3em;
+}
+.account-balance h3{
+    margin: 0;
+    font-weight: bold;
+}
+.account-balance span{
+    margin-bottom: 3%;
+    font-size: 0.8em;
+    color: grey;
+}
+.account-balance h5{
+    margin: 0;
+    margin-top: 3%;
+}
+.button{
+    background-color: rgb(56, 56, 227);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: -15%;
+    height: 15%;
+    width: 50%;
+    margin-top: 4%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.transaction-history{
+    height: 40%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date{
+    font-size: 0.7em;
+    color: grey;
+}
+.withdrawl{
+
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+/* 
+    !! second section css
+*/
+
+.second-section{
+    height: 100%;
+    width: 50%;
+    padding-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.retirement{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-family: 'Montserrat', sans-serif;
+}
+.retirement h5{
+    margin: 0;
+    color: rgb(59, 59, 243);
+    margin-bottom: 1%;
+}
+.retirement h4{
+    margin: 0;
+}
+.my-goal{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-goal-section{
+    width: 27%;
+    border-bottom:  2px solid rgb(59, 59, 243);;
+}
+.my-goal-section h5{
+    margin: 0;
+    color: grey;
+    font-size: 0.7em;
+}
+.my-goal-section h4{
+    margin-bottom: 2%;
+}
+
+.contribution-chart{
+    margin-top: 3%;
+    height: 35%;
+    width: 100%;
+    padding-left: 4%;
+    margin-bottom: 8%;
+}
+.contribution-chart h5{
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.comparison-chart{
+    margin-top: 2%;
+    height: 35%;
+    width: 100%;
+}
+.comparison-chart h4{
+    margin: 0;
+}
+.comparison-chart h6{
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: grey;
+}
+.comparison-chart-bottom{
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+.comparison-chart-span{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.comparison-chart-span span{
+    font-size: 0.8em;
+}
+.comparison-chart-canvas{
+    height: 95%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+#canvas2{
+    height: 100%;
+    width: 30%;
+}
+#canvas3{
+    height: 100%;
+    width: 30%;
+}
+#canvas4{
+    height: 100%;
+    width: 30%;
+}
+
+
+/* 
+    !! sidebar css
+*/
+
+.third-section{
+    height: 100%;
+    width: 20%;
+    padding-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.third-section h6{
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.slider{
+    margin-bottom: 7%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(186, 182, 182, 0.696);
+    height: 0.7%;
+    border-radius: 2px;
+    background-image: linear-gradient(#3c96d7b6, #3c96d7b6);
+    background-size:50%;
+    background-repeat: no-repeat;
+}
+.third-section small{
+    margin-left: 5%;
+}
+
+.update-button{
+    background-color: rgb(56, 56, 227);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 7%;
+    width: 80%;
+    margin-top: 4%;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 5%;
+}
+.view-help{
+    margin-top: -4%;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(140, 0, 255);
+
+}
+
+.view-help span{
+    font-size: 0.6em;
+    transform: translateX(-10%);
+}
+
+.final{
+    height: 13%;
+    width: 100;
+    border-left: 2px solid rgb(140, 0, 255);
+    margin-top: 10%;
+    font-size: 0.7em;
+    padding-left: 10%;
+}
+.final small{
+    color: grey;
+    margin-left: -1%;
+}
+.learn-more{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(140, 0, 255);
+    margin-top: 5%;
+    margin-left: -30%;
+}
+
+
+/* 
+
+!! For Mobile
+
+*/
+
+@media only screen and (max-width: 600px){
+
+    .main-container{
+        position: relative;
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .bottombar{
+        display: flex;
+        height: 4%;
+        width: 65%;
+        position: fixed;
+        bottom: 1%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .bottombar svg{
+        height: 60%;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+
+    .first-section{
+        height: 100%;
+        width: 100%;
+    }
+    .account-balance{
+        font-size: 0.8em;
+        padding-left: 5%;
+        position: relative;
+    }
+
+    #today{
+        position: absolute;
+        top: 4%;
+        font-size: 0.9em;
+    }
+    #d19{
+        position: absolute;
+        font-size: 2em;
+        top: 10%;
+    }
+    #ab{
+        position: relative;
+        top: 22%;
+    }
+    #d4{
+        position: relative;
+        top: 30%;
+        font-size: 1.1em;
+    }
+    #year{
+        position: relative;
+        top: 31%;
+    }
+    #d1{
+        position: relative;
+        top: 10%;
+        left: 50%;
+        font-size: 1.1em;
+    }
+    #ti{
+        position: relative;
+        left: 50%;
+        top: 11%;
+    }
+    #ib{
+        position: relative;
+        top: 10%;
+        left:10%;
+    }
+    .transaction-history{
+        font-size: 0.9em;
+        padding: 5%;
+    }
+
+    .second-section{
+        height: 140%;
+        width: 98%;
+    }
+    .retirement{
+        font-size: 0.8em;
+    }
+    .my-goal{
+        height: 30%;
+        width: 100%;
+       flex-direction: column;
+       font-size: 0.8em;
+       padding: 5%;
+    }
+    #my-goal-section-3{
+        width: 30%;
+        transform: translate(150%, -100%);
+    }
+
+
+    .contribution-chart{
+        padding: 0;
+        margin: 0;
+    }
+    .comparison-chart{
+        font-size: 0.8em;
+    }
+    .comparison-chart-bottom{
+        flex-direction: column;
+    }
+    .comparison-chart-canvas{
+        padding: 5%;
+        gap: 2%;
+    }
+
+    .third-section{
+        margin-top: 15%;
+        height: 100%;
+        width: 98%;
+        padding:0;
+    }
+    .view-help, .final{
+        display: none;
+    }
+    .update-button{
+        height: 15%;
+        width:100%;
+    }
+
+}
